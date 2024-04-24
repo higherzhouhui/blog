@@ -1,9 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import { signIn } from "@/auth"
+import UserAvatar from '@/app/components/avatar'
 export default function Home() {
+ 
   return (
     <main className={styles.main}>
+      <UserAvatar></UserAvatar>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
