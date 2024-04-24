@@ -5,12 +5,7 @@ const prisma = new PrismaClient()
 
 async function main() {
   // ... your Prisma Client queries will go here
-  const result = await prisma.user.create({
-    data: {
-      name: 'zh',
-      email: ''
-    }
-  })
+  const result = await prisma.user.findMany()
   return result
 }
 
